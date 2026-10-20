@@ -15,7 +15,8 @@
     "2026-10-12|0|lifta": true,
     "2026-10-12|2|warmup": true,
     "2026-10-12|2|liftb": true,
-    "2026-10-19|4|liftc": true
+    "2026-10-19|4|liftc": true,
+    "2026-10-19|4|warmup": true
   },
   "notes": {}
 }
