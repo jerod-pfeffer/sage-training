@@ -18,5 +18,8 @@
     "2026-10-19|4|liftc": true,
     "2026-10-19|4|warmup": true
   },
+  "exDone": {
+    "2026-10-19|0|lifta|0:1": true
+  },
   "notes": {}
 }
