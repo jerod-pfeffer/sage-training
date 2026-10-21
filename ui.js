@@ -115,24 +115,32 @@ function openSession(i, sid){
     '<h2 class="sh-title">' + escapeHtml(s.title) + '</h2>' +
     '<p class="sh-sub">' + escapeHtml([s.subtitle, s.duration, 'Week ' + cur.weekIdx + ' of ' + cur.nWeeks].filter(Boolean).join(' \u00b7 ')) + '</p>';
   h += '<button class="donebtn' + (dn ? ' is-done' : '') + '" id="btnDone">' + (dn ? '\u2713 Done \u2014 tap to undo' : 'Mark done') + '</button>';
-  for (const blk of (s.blocks || [])){
-    const items = (blk.items || []).map(it => resolveItem(it, cur.weekIdx)).filter(Boolean);
-    if (!items.length) continue;
+  (s.blocks || []).forEach((blk, bi) => {
+    const items = (blk.items || []).map((it, ii) => { const r = resolveItem(it, cur.weekIdx); return r ? { r, ik: bi + ':' + ii } : null; }).filter(Boolean);
+    if (!items.length) return;
     h += '<div class="ex-block">' + (blk.title ? '<h3>' + escapeHtml(blk.title) + '</h3>' : '');
-    for (const it of items){
-      h += '<div class="ex"><div class="exh"><span class="exn">' + escapeHtml(it.name) + (it.effort ? '<span class="exe">' + escapeHtml(it.effort) + '</span>' : '') + '</span>' + (it.sets ? '<span class="exs">' + escapeHtml(it.sets) + '</span>' : '') + '</div>';
+    for (const x of items){
+      const it = x.r, xdn = isExDone(day.slot, sid, x.ik);
+      h += '<div class="ex' + (xdn ? ' exdone' : '') + '">' +
+        '<button class="exchk" data-ik="' + x.ik + '" role="checkbox" aria-checked="' + (xdn ? 'true' : 'false') + '" aria-label="Mark ' + escapeHtml(it.name) + ' complete">' + (xdn ? '✓' : '') + '</button>' +
+        '<div class="exbody"><div class="exh"><span class="exn">' + escapeHtml(it.name) + (it.effort ? '<span class="exe">' + escapeHtml(it.effort) + '</span>' : '') + '</span>' + (it.sets ? '<span class="exs">' + escapeHtml(it.sets) + '</span>' : '') + '</div>';
       if (it.thisWeek) h += '<p class="exw">' + escapeHtml(it.thisWeek) + '</p>';
       if (it.detail) h += '<p class="exd">' + escapeHtml(it.detail) + '</p>';
       if (it.video) h += '<a class="vid" href="' + escapeHtml(it.video) + '" target="_blank" rel="noopener">Watch how</a>';
-      h += '</div>';
+      h += '</div></div>';
     }
     h += '</div>';
-  }
+  });
   h += '<div class="field"><label for="fNote">Notes</label><textarea id="fNote" placeholder="Loads, RPE, how it felt\u2026">' + escapeHtml(noteFor(day.slot, sid)) + '</textarea></div>' +
     '<div class="sh-actions"><button class="btn primary" id="btnNoteSave">Save note</button></div>';
   el.sheetBody.innerHTML = h;
   $('btnBack').addEventListener('click', () => openDay(i));
   $('btnDone').addEventListener('click', () => { toggleDone(day.slot, sid, s.title); openSession(i, sid); });
+  el.sheetBody.querySelectorAll('.exchk').forEach(b => b.addEventListener('click', () => {
+    const ex = b.closest('.ex'), on = !b.textContent;
+    ex.classList.toggle('exdone', on); b.textContent = on ? '✓' : ''; b.setAttribute('aria-checked', on ? 'true' : 'false');
+    toggleExDone(day.slot, sid, b.dataset.ik, b.getAttribute('aria-label').replace(/^Mark | complete$/g,''));
+  }));
   $('btnNoteSave').addEventListener('click', () => { saveNote(day.slot, sid, $('fNote').value, s.title); });
   openOverlay(el.sheet);
 }

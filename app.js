@@ -24,6 +24,7 @@ function normalizeState(raw){
   return { version:1,
     weekOrders: (s.weekOrders && typeof s.weekOrders === 'object') ? s.weekOrders : {},
     done: (s.done && typeof s.done === 'object') ? s.done : {},
+    exDone: (s.exDone && typeof s.exDone === 'object') ? s.exDone : {},
     notes: (s.notes && typeof s.notes === 'object') ? s.notes : {} };
 }
 function blockWeeks(b){ return Array.isArray(b.weeks) && b.weeks.length ? b.weeks.length : 4; }
@@ -188,6 +189,9 @@ function dayAt(cur, order, i){
   return { slot, dtId, dt, sessions: (dt.sessions || []).map(sid => ({ sid, s: cur.block.sessions[sid] })).filter(x => x.s) };
 }
 function isDone(slot, sid){ return !!S.state.done[keyFor(wsStr(), slot, sid)]; }
+/* Per-exercise check-offs. ik identifies the exercise by its position in the session: "<blockIdx>:<itemIdx>". */
+function exKey(slot, sid, ik){ return keyFor(wsStr(), slot, sid) + '|' + ik; }
+function isExDone(slot, sid, ik){ return !!S.state.exDone[exKey(slot, sid, ik)]; }
 function noteFor(slot, sid){ return S.state.notes[keyFor(wsStr(), slot, sid)] || ''; }
 
 /* ── Mutations ── */
@@ -203,6 +207,11 @@ function toggleDone(slot, sid, title){
   const now = !S.state.done[k];
   persist(st => { if (now) st.done[k] = true; else delete st.done[k]; }, (now ? 'done: ' : 'undo: ') + title);
 }
+function toggleExDone(slot, sid, ik, name){
+  const k = exKey(slot, sid, ik);
+  const now = !S.state.exDone[k];
+  persist(st => { if (now) st.exDone[k] = true; else delete st.exDone[k]; }, (now ? 'did: ' : 'undo: ') + name);
+}
 function saveNote(slot, sid, text, title){
   const k = keyFor(wsStr(), slot, sid);
   const t = (text || '').trim();
@@ -213,6 +222,7 @@ function pruneState(st){
   const keep = fmtDate(addDays(startOfWeek(new Date()), -7 * 26));
   for (const k of Object.keys(st.weekOrders)) if (k < keep) delete st.weekOrders[k];
   for (const k of Object.keys(st.done)) if (k.slice(0,10) < keep) delete st.done[k];
+  for (const k of Object.keys(st.exDone)) if (k.slice(0,10) < keep) delete st.exDone[k];
   for (const k of Object.keys(st.notes)) if (k.slice(0,10) < keep) delete st.notes[k];
 }
 async function persist(mutator, summary){

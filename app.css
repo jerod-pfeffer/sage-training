@@ -154,8 +154,18 @@
 
   .ex-block{margin:0 0 14px;}
   .ex-block h3{font-family:var(--disp); font-weight:600; font-size:15px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); margin:0 0 6px; padding-bottom:4px; border-bottom:1px solid var(--line);}
-  .ex{padding:9px 0; border-bottom:1px solid var(--line);}
+  .ex{padding:9px 0; border-bottom:1px solid var(--line); display:flex; align-items:flex-start; gap:10px;}
   .ex:last-child{border-bottom:none;}
+  .ex .exbody{flex:1; min-width:0;}
+  .ex .exchk{
+    flex:0 0 auto; width:26px; height:26px; margin-top:1px; border-radius:50%; position:relative;
+    border:2px solid var(--line2); background:var(--panel); color:var(--bg);
+    display:grid; place-items:center; font-size:14px; font-weight:700; line-height:1;
+  }
+  .ex .exchk::after{content:''; position:absolute; inset:-9px;}
+  .ex.exdone .exchk{background:var(--sage); border-color:var(--sage);}
+  .ex.exdone .exn{color:var(--dim); text-decoration:line-through; text-decoration-color:var(--line2); text-decoration-thickness:1.5px;}
+  .ex.exdone .exs{color:var(--dim);}
   .ex .exh{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
   .ex .exn{font-weight:600; font-size:15px; color:var(--ink);}
   .ex .exs{font-family:var(--disp); font-weight:600; font-size:15px; letter-spacing:.04em; color:var(--amber); white-space:nowrap;}
