@@ -16,14 +16,16 @@
     "2026-10-12|2|warmup": true,
     "2026-10-12|2|liftb": true,
     "2026-10-19|4|liftc": true,
-    "2026-10-19|4|warmup": true
+    "2026-10-19|4|warmup": true,
+    "2026-10-19|0|warmup": true
   },
   "exDone": {
     "2026-10-19|0|lifta|0:1": true,
     "2026-10-19|0|warmup|0:0": true,
     "2026-10-19|0|warmup|1:0": true,
     "2026-10-19|0|warmup|1:1": true,
-    "2026-10-19|0|warmup|2:0": true
+    "2026-10-19|0|warmup|2:0": true,
+    "2026-10-19|0|warmup|2:1": true
   },
   "notes": {}
 }
