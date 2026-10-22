@@ -17,7 +17,8 @@
     "2026-10-12|2|liftb": true,
     "2026-10-19|4|liftc": true,
     "2026-10-19|4|warmup": true,
-    "2026-10-19|0|warmup": true
+    "2026-10-19|0|warmup": true,
+    "2026-10-19|0|lifta": true
   },
   "exDone": {
     "2026-10-19|0|warmup|0:0": true,
@@ -29,7 +30,8 @@
     "2026-10-19|0|lifta|0:2": true,
     "2026-10-19|0|lifta|1:0": true,
     "2026-10-19|0|lifta|1:1": true,
-    "2026-10-19|0|lifta|2:0": true
+    "2026-10-19|0|lifta|2:0": true,
+    "2026-10-19|0|lifta|2:1": true
   },
   "notes": {}
 }
