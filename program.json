@@ -7,10 +7,26 @@
       "tag": "Block 1 · v2 · supersets",
       "start": "2026-10-05",
       "weeks": [
-        { "n": 1, "label": "Foundation", "focus": "Learn the hinge and squat patterns with kettlebells at 2 to 3 reps in reserve on every set. Establish the Monday, Wednesday, Friday rhythm and record the baselines." },
-        { "n": 2, "label": "Foundation +", "focus": "Same movements. Move to a slightly heavier bell only on exercises where every rep last week was controlled. Soreness should be fading, not building." },
-        { "n": 3, "label": "Build", "focus": "The main work runs as three supersets of two exercises. Dead hangs, bench dips, and hollow holds enter. The barbell Romanian deadlift arrives, empty or lightly loaded. Kettlebell swings unlock only if the hinge looks solid." },
-        { "n": 4, "label": "Consolidate", "focus": "Hold week 3 loads and sharpen form. Add a little time to the hangs and holds. Finish every session feeling strong, then retest the baselines at the end of the week." }
+        {
+          "n": 1,
+          "label": "Foundation",
+          "focus": "Learn the hinge and squat patterns with kettlebells at 2 to 3 reps in reserve on every set. Establish the Monday, Wednesday, Friday rhythm and record the baselines."
+        },
+        {
+          "n": 2,
+          "label": "Foundation +",
+          "focus": "Same movements. Move to a slightly heavier bell only on exercises where every rep last week was controlled. Soreness should be fading, not building."
+        },
+        {
+          "n": 3,
+          "label": "Build",
+          "focus": "The main work runs as three supersets of two exercises. Dead hangs, bench dips, and hollow holds enter. The barbell Romanian deadlift arrives, empty or lightly loaded. Kettlebell swings unlock only if the hinge looks solid."
+        },
+        {
+          "n": 4,
+          "label": "Consolidate",
+          "focus": "Hold week 3 loads and sharpen form. Add a little time to the hangs and holds. Finish every session feeling strong, then retest the baselines at the end of the week."
+        }
       ],
       "intro": "A phase-in month for a strong, generally fit body that has not been under a barbell or kettlebell program in a while. Years of ski racing built powerful quads; this block deliberately balances that with posterior chain and back work: deadlifts, Romanian deadlifts, rows, carries, hangs, and direct trunk work, because a desk job and a quad-dominant history both leave the back of the body underfed. Each session is one warm-up circuit, three supersets of two exercises, and a short paired cool-down, about 45 minutes door to door. Rowing is warm-up only in this version. The goal of the month is not to lift heavy. It is to finish with clean patterns, a resilient back, and room to progress into the next block.",
       "rules": [
@@ -38,12 +54,52 @@
         "Dead hang: longest single hang, in seconds",
         "Side plank: seconds per side"
       ],
-      "week": ["day_a", "rest", "day_b", "rest", "day_c", "rest", "rest"],
+      "week": [
+        "day_a",
+        "rest",
+        "day_b",
+        "rest",
+        "day_c",
+        "rest",
+        "rest"
+      ],
       "dayTypes": {
-        "day_a": { "label": "Hinge + Pull", "kind": "lift", "sessions": ["warmup", "lifta", "cooldown"] },
-        "day_b": { "label": "Squat + Press", "kind": "lift", "sessions": ["warmup", "liftb", "cooldown"] },
-        "day_c": { "label": "Hinge + Push + Core", "kind": "lift", "sessions": ["warmup", "liftc", "cooldown"] },
-        "rest":  { "label": "Rest", "kind": "rest", "sessions": ["off", "roll"], "note": "Easy movement is welcome; hard effort is not." }
+        "day_a": {
+          "label": "Hinge + Pull",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "lifta",
+            "cooldown"
+          ]
+        },
+        "day_b": {
+          "label": "Squat + Press",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "liftb",
+            "cooldown"
+          ]
+        },
+        "day_c": {
+          "label": "Hinge + Push + Core",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "liftc",
+            "cooldown"
+          ]
+        },
+        "rest": {
+          "label": "Rest",
+          "kind": "rest",
+          "sessions": [
+            "off",
+            "roll"
+          ],
+          "note": "Easy movement is welcome; hard effort is not."
+        }
       },
       "sessions": {
         "warmup": {
@@ -52,17 +108,45 @@
           "kind": "mobility",
           "duration": "8 min",
           "blocks": [
-            { "title": "Opener", "items": [
-              { "name": "Easy row", "detail": "4 min at a fully conversational effort." }
-            ]},
-            { "title": "Pair 1 · 2 rounds", "items": [
-              { "name": "Bodyweight squat", "sets": "×10", "detail": "Slow down, quick up, chest tall." },
-              { "name": "Band pull-apart", "sets": "×10", "detail": "Arms straight, squeeze the shoulder blades, band to the chest." }
-            ]},
-            { "title": "Pair 2 · 2 rounds", "items": [
-              { "name": "Unloaded hip hinge", "sets": "×8", "detail": "Dowel on the back or hands on hips; push the hips back to a hamstring stretch, flat back throughout." },
-              { "name": "Leg swings + arm circles", "sets": "×8 each", "detail": "Front-to-back leg swings per leg, big slow arm circles both directions." }
-            ]}
+            {
+              "title": "Opener",
+              "items": [
+                {
+                  "name": "Easy row",
+                  "detail": "4 min at a fully conversational effort."
+                }
+              ]
+            },
+            {
+              "title": "Pair 1 · 2 rounds",
+              "items": [
+                {
+                  "name": "Bodyweight squat",
+                  "sets": "×10",
+                  "detail": "Slow down, quick up, chest tall."
+                },
+                {
+                  "name": "Band pull-apart",
+                  "sets": "×10",
+                  "detail": "Arms straight, squeeze the shoulder blades, band to the chest."
+                }
+              ]
+            },
+            {
+              "title": "Pair 2 · 2 rounds",
+              "items": [
+                {
+                  "name": "Unloaded hip hinge",
+                  "sets": "×8",
+                  "detail": "Dowel on the back or hands on hips; push the hips back to a hamstring stretch, flat back throughout."
+                },
+                {
+                  "name": "Leg swings + arm circles",
+                  "sets": "×8 each",
+                  "detail": "Front-to-back leg swings per leg, big slow arm circles both directions."
+                }
+              ]
+            }
           ]
         },
         "lifta": {
@@ -71,19 +155,98 @@
           "kind": "lift",
           "duration": "~30 min",
           "blocks": [
-            { "title": "Superset 1 · 3 rounds", "items": [
-              { "name": "Kettlebell deadlift", "weeks": [1, 2], "video": "https://www.youtube.com/watch?v=sDbMsk3d6F4", "detail": "Bell between the feet, hips back, flat back, stand tall. The pattern of the whole month.", "byWeek": { "1": "3×8 with a moderate bell.", "2": "3×8, slightly heavier bell only if every week 1 rep was controlled." } },
-              { "name": "Barbell Romanian deadlift", "weeks": [3, 4], "detail": "Bar slides down the thighs to the deepest flat-back range, then hips drive forward. Pattern quality over load; an empty bar or two kettlebells is plenty.", "byWeek": { "3": "3×6, empty or lightly loaded bar.", "4": "3×6, hold week 3 load, crisper reps." } },
-              { "name": "Dead hang", "detail": "From the pull-up bar or rings. Shoulders down away from the ears, feet assisting on a box as needed. Grip, shoulders, and a gentle decompression between hinge sets.", "byWeek": { "1": "3 × 15–20 s", "2": "3 × 15–20 s", "3": "3 × 20–30 s", "4": "3 × 30 s, less foot assist if it feels easy." } }
-            ]},
-            { "title": "Superset 2 · 3 rounds", "items": [
-              { "name": "Single-arm kettlebell row", "detail": "Free hand braced on the rack or a bench, flat back, pull the bell to the hip.", "byWeek": { "1": "3×8 per arm", "2": "3×8 per arm", "3": "3×8 per arm, heavier bell.", "4": "3×8 per arm at week 3 weight." } },
-              { "name": "Glute bridge", "detail": "Squeeze at the top for a full second; ribs down, no low-back arch.", "byWeek": { "1": "3×10, both legs.", "2": "3×10, both legs.", "3": "3×8 per side, single leg. Hips stay level; drive through the heel.", "4": "3×8 per side, single leg." } }
-            ]},
-            { "title": "Superset 3 · 3 rounds", "items": [
-              { "name": "Ring row", "video": "https://www.youtube.com/watch?v=-4ewEbYEr4w", "detail": "Body in one line, squeeze the shoulder blades, pull the rings to the ribs. Walk the feet forward to make it harder, back to make it easier.", "byWeek": { "1": "3×6–8", "2": "3×6–8", "3": "3×8–10, lower the body angle a step.", "4": "3×8–10 at the week 3 angle." } },
-              { "name": "Dead bug", "video": "https://www.youtube.com/watch?v=bxn9FBrt4-A", "detail": "Low back gently pressed to the floor the entire time. Slow, opposite arm and leg.", "byWeek": { "1": "3×8 per side", "2": "3×8 per side", "3": "3×10 per side", "4": "3×10 per side" } }
-            ]}
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell deadlift",
+                  "weeks": [
+                    1,
+                    2
+                  ],
+                  "video": "https://www.youtube.com/watch?v=sDbMsk3d6F4",
+                  "detail": "Bell between the feet, hips back, flat back, stand tall. The pattern of the whole month.",
+                  "byWeek": {
+                    "1": "3×8 with a moderate bell.",
+                    "2": "3×8, slightly heavier bell only if every week 1 rep was controlled."
+                  }
+                },
+                {
+                  "name": "Barbell Romanian deadlift",
+                  "weeks": [
+                    3,
+                    4
+                  ],
+                  "detail": "Bar slides down the thighs to the deepest flat-back range, then hips drive forward. Pattern quality over load; an empty bar or two kettlebells is plenty.",
+                  "byWeek": {
+                    "3": "3×6, empty or lightly loaded bar.",
+                    "4": "3×6, hold week 3 load, crisper reps."
+                  }
+                },
+                {
+                  "name": "Dead hang",
+                  "detail": "From the pull-up bar or rings. Shoulders down away from the ears, feet assisting on a box as needed. Grip, shoulders, and a gentle decompression between hinge sets.",
+                  "byWeek": {
+                    "1": "3 × 15–20 s",
+                    "2": "3 × 15–20 s",
+                    "3": "3 × 20–30 s",
+                    "4": "3 × 30 s, less foot assist if it feels easy."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Single-arm kettlebell row",
+                  "detail": "Free hand braced on the rack or a bench, flat back, pull the bell to the hip.",
+                  "byWeek": {
+                    "1": "3×8 per arm",
+                    "2": "3×8 per arm",
+                    "3": "3×8 per arm, heavier bell.",
+                    "4": "3×8 per arm at week 3 weight."
+                  }
+                },
+                {
+                  "name": "Glute bridge",
+                  "detail": "Squeeze at the top for a full second; ribs down, no low-back arch.",
+                  "byWeek": {
+                    "1": "3×10, both legs.",
+                    "2": "3×10, both legs.",
+                    "3": "3×8 per side, single leg. Hips stay level; drive through the heel.",
+                    "4": "3×8 per side, single leg."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds",
+              "items": [
+                {
+                  "name": "Ring row",
+                  "video": "https://www.youtube.com/watch?v=-4ewEbYEr4w",
+                  "detail": "Body in one line, squeeze the shoulder blades, pull the rings to the ribs. Walk the feet forward to make it harder, back to make it easier.",
+                  "byWeek": {
+                    "1": "3×6–8",
+                    "2": "3×6–8",
+                    "3": "3×8–10, lower the body angle a step.",
+                    "4": "3×8–10 at the week 3 angle."
+                  }
+                },
+                {
+                  "name": "Dead bug",
+                  "video": "https://www.youtube.com/watch?v=bxn9FBrt4-A",
+                  "detail": "Low back gently pressed to the floor the entire time. Slow, opposite arm and leg.",
+                  "byWeek": {
+                    "1": "3×8 per side",
+                    "2": "3×8 per side",
+                    "3": "3×10 per side",
+                    "4": "3×10 per side"
+                  }
+                }
+              ]
+            }
           ]
         },
         "liftb": {
@@ -92,18 +255,84 @@
           "kind": "lift",
           "duration": "~30 min",
           "blocks": [
-            { "title": "Superset 1 · 3 rounds", "items": [
-              { "name": "Goblet squat", "video": "https://www.youtube.com/watch?v=yGswPtbSlro", "detail": "Bell at the chest, elbows inside the knees at the bottom, chest tall.", "byWeek": { "1": "3×8", "2": "3×8, heavier bell if week 1 was controlled.", "3": "3×8, heavier bell than weeks 1 and 2.", "4": "3×8, hold week 3 load." } },
-              { "name": "Bench dips", "detail": "Hands on the bench edge behind you, feet on the floor, knees bent to start. Lower until the elbows reach about 90 degrees, shoulders down and back, hips brushing the bench. Straighten the legs over the weeks to add load; any shoulder pinch means incline push-ups instead.", "byWeek": { "1": "3×6–8, knees bent.", "2": "3×6–8, knees bent.", "3": "3×8–10.", "4": "3×8–10, legs straighter if the shoulders feel good." } }
-            ]},
-            { "title": "Superset 2 · 3 rounds", "items": [
-              { "name": "Kettlebell reverse lunge", "detail": "Step back, knee toward the floor with control, drive up through the front heel. Balance work for a ski racer's side-to-side symmetry.", "byWeek": { "1": "3×6 per leg, bodyweight or a light bell held goblet style.", "2": "3×6 per leg.", "3": "3×8 per leg, add or increase the bell.", "4": "3×8 per leg at week 3 load." } },
-              { "name": "Band face pull", "video": "https://www.youtube.com/watch?v=Wq-Td9UXRK8", "detail": "Band anchored at eye level on the rack; pull to the face with elbows high and wide. Desk-job antidote.", "byWeek": { "1": "3×12", "2": "3×12", "3": "3×15", "4": "3×15" } }
-            ]},
-            { "title": "Superset 3 · 3 rounds", "items": [
-              { "name": "Loaded carry", "detail": "Tall posture, no leaning, about 20 yards per trip.", "byWeek": { "1": "3 trips, farmer carry: a bell in each hand.", "2": "3 trips, farmer carry.", "3": "3 trips per side, suitcase carry: one bell, switch sides each trip; resist the sideways lean.", "4": "3 trips per side, suitcase carry, heavier bell if posture stays tall." } },
-              { "name": "Bird dog", "video": "https://www.youtube.com/watch?v=ZdAHe9_HeEw", "detail": "Opposite arm and leg, hips level, slow. Reach long rather than high.", "byWeek": { "1": "3×6 per side", "2": "3×6 per side", "3": "3×8 per side", "4": "3×8 per side" } }
-            ]}
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Goblet squat",
+                  "video": "https://www.youtube.com/watch?v=yGswPtbSlro",
+                  "detail": "Bell at the chest, elbows inside the knees at the bottom, chest tall.",
+                  "byWeek": {
+                    "1": "3×8",
+                    "2": "3×8, heavier bell if week 1 was controlled.",
+                    "3": "3×8, heavier bell than weeks 1 and 2.",
+                    "4": "3×8, hold week 3 load."
+                  }
+                },
+                {
+                  "name": "Bench dips",
+                  "detail": "Hands on the bench edge behind you, feet on the floor, knees bent to start. Lower until the elbows reach about 90 degrees, shoulders down and back, hips brushing the bench. Straighten the legs over the weeks to add load; any shoulder pinch means incline push-ups instead.",
+                  "byWeek": {
+                    "1": "3×6–8, knees bent.",
+                    "2": "3×6–8, knees bent.",
+                    "3": "3×8–10.",
+                    "4": "3×8–10, legs straighter if the shoulders feel good."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell reverse lunge",
+                  "detail": "Step back, knee toward the floor with control, drive up through the front heel. Balance work for a ski racer's side-to-side symmetry.",
+                  "byWeek": {
+                    "1": "3×6 per leg, bodyweight or a light bell held goblet style.",
+                    "2": "3×6 per leg.",
+                    "3": "3×8 per leg, add or increase the bell.",
+                    "4": "3×8 per leg at week 3 load."
+                  }
+                },
+                {
+                  "name": "Band face pull",
+                  "video": "https://www.youtube.com/watch?v=Wq-Td9UXRK8",
+                  "detail": "Band anchored at eye level on the rack; pull to the face with elbows high and wide. Desk-job antidote.",
+                  "byWeek": {
+                    "1": "3×12",
+                    "2": "3×12",
+                    "3": "3×15",
+                    "4": "3×15"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds",
+              "items": [
+                {
+                  "name": "Loaded carry",
+                  "detail": "Tall posture, no leaning, about 20 yards per trip.",
+                  "byWeek": {
+                    "1": "3 trips, farmer carry: a bell in each hand.",
+                    "2": "3 trips, farmer carry.",
+                    "3": "3 trips per side, suitcase carry: one bell, switch sides each trip; resist the sideways lean.",
+                    "4": "3 trips per side, suitcase carry, heavier bell if posture stays tall."
+                  }
+                },
+                {
+                  "name": "Bird dog",
+                  "video": "https://www.youtube.com/watch?v=ZdAHe9_HeEw",
+                  "detail": "Opposite arm and leg, hips level, slow. Reach long rather than high.",
+                  "byWeek": {
+                    "1": "3×6 per side",
+                    "2": "3×6 per side",
+                    "3": "3×8 per side",
+                    "4": "3×8 per side"
+                  }
+                }
+              ]
+            }
           ]
         },
         "liftc": {
@@ -112,20 +341,99 @@
           "kind": "lift",
           "duration": "~30 min",
           "blocks": [
-            { "title": "Superset 1 · 3 rounds", "items": [
-              { "name": "Kettlebell Romanian deadlift", "weeks": [1, 2], "sets": "3×8", "video": "https://www.youtube.com/watch?v=Uc5rP5xs7qQ", "detail": "Bell slides down the thighs with a 2 to 3 second lowering; soft knees, flat back, hamstring stretch at the bottom." },
-              { "name": "Kettlebell deadlift", "weeks": [3, 4], "sets": "3×8", "detail": "Heavier than the weeks 1 and 2 bell; every rep crisp." },
-              { "name": "Incline push-up", "detail": "Hands on the rack safety bar. Body in one rigid line; lower the bar setting over time, not the standards.", "byWeek": { "1": "3×6–8, bar set high.", "2": "3×6–8.", "3": "3×8–10, hands a notch lower.", "4": "3×8–10 at the week 3 height." } }
-            ]},
-            { "title": "Superset 2 · 3 rounds", "items": [
-              { "name": "Band good morning", "weeks": [1, 2], "sets": "3×10", "detail": "Band over the shoulders and under the feet; hinge against it with a flat back." },
-              { "name": "Kettlebell swing", "weeks": [3, 4], "sets": "3×10", "video": "https://www.youtube.com/watch?v=S27tbl_yP3E", "detail": "Only if the hinge looks solid. Hips snap, arms relax, bell floats to chest height. Otherwise repeat band good mornings." },
-              { "name": "Dead hang", "detail": "Second dose of the week. Shoulders down, quiet body, feet assisting as needed.", "byWeek": { "1": "3 × 15–20 s", "2": "3 × 15–20 s", "3": "3 × 20–30 s", "4": "3 × 30 s" } }
-            ]},
-            { "title": "Superset 3 · 3 rounds · core", "items": [
-              { "name": "Hollow hold", "detail": "Low back pressed to the floor, arms by the sides or reaching past the hips, legs as low as the low back allows. Bend the knees to make it easier; never let the low back peel up.", "byWeek": { "1": "3 × 10–15 s", "2": "3 × 10–15 s", "3": "3 × 15–20 s", "4": "3 × 20 s" } },
-              { "name": "Side plank", "detail": "Elbow under the shoulder, hips tall in one line. From the knees if needed.", "byWeek": { "1": "3 × 15–20 s per side", "2": "3 × 15–20 s per side", "3": "3 × 20–30 s per side", "4": "3 × 25–30 s per side" } }
-            ]}
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell Romanian deadlift",
+                  "weeks": [
+                    1,
+                    2
+                  ],
+                  "sets": "3×8",
+                  "video": "https://www.youtube.com/watch?v=Uc5rP5xs7qQ",
+                  "detail": "Bell slides down the thighs with a 2 to 3 second lowering; soft knees, flat back, hamstring stretch at the bottom."
+                },
+                {
+                  "name": "Kettlebell deadlift",
+                  "weeks": [
+                    3,
+                    4
+                  ],
+                  "sets": "3×8",
+                  "detail": "Heavier than the weeks 1 and 2 bell; every rep crisp."
+                },
+                {
+                  "name": "Incline push-up",
+                  "detail": "Hands on the rack safety bar. Body in one rigid line; lower the bar setting over time, not the standards.",
+                  "byWeek": {
+                    "1": "3×6–8, bar set high.",
+                    "2": "3×6–8.",
+                    "3": "3×8–10, hands a notch lower.",
+                    "4": "3×8–10 at the week 3 height."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Band good morning",
+                  "weeks": [
+                    1,
+                    2
+                  ],
+                  "sets": "3×10",
+                  "detail": "Band over the shoulders and under the feet; hinge against it with a flat back."
+                },
+                {
+                  "name": "Kettlebell swing",
+                  "weeks": [
+                    3,
+                    4
+                  ],
+                  "sets": "3×10",
+                  "video": "https://www.youtube.com/watch?v=S27tbl_yP3E",
+                  "detail": "Only if the hinge looks solid. Hips snap, arms relax, bell floats to chest height. Otherwise repeat band good mornings."
+                },
+                {
+                  "name": "Dead hang",
+                  "detail": "Second dose of the week. Shoulders down, quiet body, feet assisting as needed.",
+                  "byWeek": {
+                    "1": "3 × 15–20 s",
+                    "2": "3 × 15–20 s",
+                    "3": "3 × 20–30 s",
+                    "4": "3 × 30 s"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds · core",
+              "items": [
+                {
+                  "name": "Hollow hold",
+                  "detail": "Low back pressed to the floor, arms by the sides or reaching past the hips, legs as low as the low back allows. Bend the knees to make it easier; never let the low back peel up.",
+                  "byWeek": {
+                    "1": "3 × 10–15 s",
+                    "2": "3 × 10–15 s",
+                    "3": "3 × 15–20 s",
+                    "4": "3 × 20 s"
+                  }
+                },
+                {
+                  "name": "Side plank",
+                  "detail": "Elbow under the shoulder, hips tall in one line. From the knees if needed.",
+                  "byWeek": {
+                    "1": "3 × 15–20 s per side",
+                    "2": "3 × 15–20 s per side",
+                    "3": "3 × 20–30 s per side",
+                    "4": "3 × 25–30 s per side"
+                  }
+                }
+              ]
+            }
           ]
         },
         "cooldown": {
@@ -134,14 +442,36 @@
           "kind": "mobility",
           "duration": "5 min",
           "blocks": [
-            { "title": "Pair 1 · 2 rounds", "items": [
-              { "name": "Standing forward fold", "sets": "30 s", "detail": "Soft knees, hang heavy, breathe." },
-              { "name": "Hip flexor stretch", "sets": "30 s per side", "detail": "Half-kneeling, glute of the down leg squeezed, gentle shift forward. The desk-chair counter-move." }
-            ]},
-            { "title": "Pair 2 · 1 round", "items": [
-              { "name": "Child's pose", "sets": "45 s", "detail": "Knees wide, arms long, let the back breathe." },
-              { "name": "Chest opener", "sets": "30 s per side", "detail": "Forearm on the rack upright, step gently through until the chest stretches." }
-            ]}
+            {
+              "title": "Pair 1 · 2 rounds",
+              "items": [
+                {
+                  "name": "Standing forward fold",
+                  "sets": "30 s",
+                  "detail": "Soft knees, hang heavy, breathe."
+                },
+                {
+                  "name": "Hip flexor stretch",
+                  "sets": "30 s per side",
+                  "detail": "Half-kneeling, glute of the down leg squeezed, gentle shift forward. The desk-chair counter-move."
+                }
+              ]
+            },
+            {
+              "title": "Pair 2 · 1 round",
+              "items": [
+                {
+                  "name": "Child's pose",
+                  "sets": "45 s",
+                  "detail": "Knees wide, arms long, let the back breathe."
+                },
+                {
+                  "name": "Chest opener",
+                  "sets": "30 s per side",
+                  "detail": "Forearm on the rack upright, step gently through until the chest stretches."
+                }
+              ]
+            }
           ]
         },
         "roll": {
@@ -150,16 +480,42 @@
           "kind": "mobility",
           "duration": "10–12 min",
           "blocks": [
-            { "title": "Foam roll · ~45 s per area", "items": [
-              { "name": "Quads and hip flexors", "detail": "Slow passes, pause on tender spots, keep breathing." },
-              { "name": "Glutes and hamstrings", "detail": "Sit on the roller, tip to each side; then the back of the thighs." },
-              { "name": "Upper back", "detail": "Roller across the shoulder blades, hands behind the head, gentle extension. Stay off the low back and neck." },
-              { "name": "Calves and lats", "detail": "Optional extras if anything feels tight." }
-            ]},
-            { "title": "Stretch pair · 2 rounds", "items": [
-              { "name": "Hamstring strap stretch", "sets": "45 s per side", "detail": "Lying on the back, band or strap over the foot, leg toward the ceiling, knee soft." },
-              { "name": "Figure-4 stretch", "sets": "45 s per side", "detail": "Ankle over the opposite knee, pull the legs in gently. Glutes and hips." }
-            ]}
+            {
+              "title": "Foam roll · ~45 s per area",
+              "items": [
+                {
+                  "name": "Quads and hip flexors",
+                  "detail": "Slow passes, pause on tender spots, keep breathing."
+                },
+                {
+                  "name": "Glutes and hamstrings",
+                  "detail": "Sit on the roller, tip to each side; then the back of the thighs."
+                },
+                {
+                  "name": "Upper back",
+                  "detail": "Roller across the shoulder blades, hands behind the head, gentle extension. Stay off the low back and neck."
+                },
+                {
+                  "name": "Calves and lats",
+                  "detail": "Optional extras if anything feels tight."
+                }
+              ]
+            },
+            {
+              "title": "Stretch pair · 2 rounds",
+              "items": [
+                {
+                  "name": "Hamstring strap stretch",
+                  "sets": "45 s per side",
+                  "detail": "Lying on the back, band or strap over the foot, leg toward the ceiling, knee soft."
+                },
+                {
+                  "name": "Figure-4 stretch",
+                  "sets": "45 s per side",
+                  "detail": "Ankle over the opposite knee, pull the legs in gently. Glutes and hips."
+                }
+              ]
+            }
           ]
         },
         "off": {
@@ -168,10 +524,610 @@
           "kind": "mobility",
           "duration": "20–30 min",
           "blocks": [
-            { "title": "", "items": [
-              { "name": "Walk", "detail": "20 to 30 minutes at a genuinely easy pace, outside if the weather allows." },
-              { "name": "Gentle stretch", "detail": "A few minutes for whatever feels tight: hamstrings, hips, chest. Nothing forced." }
-            ]}
+            {
+              "title": "",
+              "items": [
+                {
+                  "name": "Walk",
+                  "detail": "20 to 30 minutes at a genuinely easy pace, outside if the weather allows."
+                },
+                {
+                  "name": "Gentle stretch",
+                  "detail": "A few minutes for whatever feels tight: hamstrings, hips, chest. Nothing forced."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sage-2026-b2",
+      "name": "4-Week Strength + Board Block",
+      "tag": "Block 2 · lifts + TB2 positions",
+      "start": "2026-11-09",
+      "weeks": [
+        {
+          "n": 1,
+          "label": "Positions",
+          "focus": "Lifts hold their Block 1 end loads. On the board: position holds on V0s — pull on, hips to the wall, 5 to 7 seconds per position, step down, move to the next. Quality positions, zero fighting."
+        },
+        {
+          "n": 2,
+          "label": "Positions +",
+          "focus": "Holds grow to 7 to 10 seconds, and one hand starts to hover and re-grip. Lifts add a rep or a touch of load where every rep last week was controlled."
+        },
+        {
+          "n": 3,
+          "label": "Linking",
+          "focus": "Link 2 to 3 moves at a time on V0s, resting on the mat between links. Rehearse Doom Scroll's individual moves in isolation. Lifts hold steady."
+        },
+        {
+          "n": 4,
+          "label": "Sending",
+          "focus": "Climb V0s in overlapping halves or in full, give Doom Scroll real attempts in sections, and feel out the easier moves of one V1. Retest the baselines at the end of the week."
+        }
+      ],
+      "intro": "Block 2 keeps the Monday, Wednesday, Friday strength work that Block 1 built and adds two short Tension Board days, Tuesday and Saturday. The board work is positional: get on the wall, find the body position that makes each pair of holds feel light, and hold it, hips in, for a handful of seconds. That is how climbers learn to climb before they get strong, and it is the fastest route from \"above my strength\" to sending. The four weeks run positions, then hovers, then links, then real attempts, aimed at Doom Scroll and the friendlier V0s and V1s. Board days are skill days: they should end feeling fresher than a lift day, never wrecked.",
+      "rules": [
+        "Every lift set still ends with 2 to 3 reps in the tank; supersets run as in Block 1: alternate the pair, 45 to 60 seconds between efforts, three rounds.",
+        "Board days are skill practice, not workouts. Stop each exercise while positions still feel crisp; when the hips start sagging off the wall, the session is over.",
+        "Set the board at its gentlest angle all month. Angle is a dial for later blocks.",
+        "Fingers and elbows adapt slower than muscles, especially when board climbing is new. Open-hand grips, no crimping hard, and any sharp finger or inner-elbow pain ends the board day.",
+        "Rest on the mat between efforts on the board: 1 to 2 minutes feels like too much and is right.",
+        "Three quality board sessions beat eight scrappy ones. If a week only allows one board day, take it and move on.",
+        "Sharp pain, especially in the low back, ends that movement for the day. Soreness that changes how you walk means the next session runs lighter."
+      ],
+      "recovery": [
+        "Protein at every meal, with emphasis on the meal after training. Five training days a week now; food is part of the program.",
+        "Sleep 7.5 hours or more.",
+        "Expect some finger-skin tenderness the first two weeks of board work. File sharp edges on the skin, stop before it tears, and let it thicken.",
+        "The stretch and foam-roll session stays available after any session or on the full rest day.",
+        "Thursday and Sunday are real rest days. Walks, yes; extra board laps, no."
+      ],
+      "tests": [
+        "Doom Scroll: how far along it she can get (positions held, moves linked, or sections climbed)",
+        "V0s: how many she can do in full",
+        "Dead hang: longest single hang, in seconds",
+        "Goblet squat: bell weight that feels controlled for 8 reps",
+        "Side plank: seconds per side"
+      ],
+      "week": [
+        "day_a",
+        "tb2",
+        "day_b",
+        "rest",
+        "day_c",
+        "tb2",
+        "rest"
+      ],
+      "dayTypes": {
+        "day_a": {
+          "label": "Hinge + Pull",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "lifta",
+            "cooldown"
+          ]
+        },
+        "day_b": {
+          "label": "Squat + Press",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "liftb",
+            "cooldown"
+          ]
+        },
+        "day_c": {
+          "label": "Hinge + Push + Core",
+          "kind": "lift",
+          "sessions": [
+            "warmup",
+            "liftc",
+            "cooldown"
+          ]
+        },
+        "tb2": {
+          "label": "TB2 Positions",
+          "kind": "climb",
+          "sessions": [
+            "tb2"
+          ]
+        },
+        "rest": {
+          "label": "Rest",
+          "kind": "rest",
+          "sessions": [
+            "off",
+            "roll"
+          ],
+          "note": "Easy movement is welcome; hard effort is not."
+        }
+      },
+      "sessions": {
+        "warmup": {
+          "title": "Warm-up",
+          "subtitle": "Lift days · before the main work",
+          "kind": "mobility",
+          "duration": "8 min",
+          "blocks": [
+            {
+              "title": "Opener",
+              "items": [
+                {
+                  "name": "Easy row",
+                  "detail": "4 min at a fully conversational effort."
+                }
+              ]
+            },
+            {
+              "title": "Pair 1 · 2 rounds",
+              "items": [
+                {
+                  "name": "Bodyweight squat",
+                  "sets": "×10",
+                  "detail": "Slow down, quick up, chest tall."
+                },
+                {
+                  "name": "Band pull-apart",
+                  "sets": "×10",
+                  "detail": "Arms straight, squeeze the shoulder blades, band to the chest."
+                }
+              ]
+            },
+            {
+              "title": "Pair 2 · 2 rounds",
+              "items": [
+                {
+                  "name": "Unloaded hip hinge",
+                  "sets": "×8",
+                  "detail": "Push the hips back to a hamstring stretch, flat back throughout."
+                },
+                {
+                  "name": "Leg swings + arm circles",
+                  "sets": "×8 each",
+                  "detail": "Front-to-back leg swings per leg, big slow arm circles both directions."
+                }
+              ]
+            }
+          ]
+        },
+        "tb2": {
+          "title": "TB2 positions",
+          "subtitle": "Skill day · gentlest angle · stop while fresh",
+          "kind": "climb",
+          "duration": "25–30 min",
+          "blocks": [
+            {
+              "title": "Warm-up",
+              "items": [
+                {
+                  "name": "Easy row or jumping jacks",
+                  "sets": "3 min",
+                  "detail": "Just enough to feel warm."
+                },
+                {
+                  "name": "Wrist and finger circuit",
+                  "sets": "2 rounds",
+                  "detail": "10 wrist circles each way, 10 slow finger curls open and closed, 10 band pull-aparts."
+                },
+                {
+                  "name": "Pull-ons",
+                  "sets": "×5",
+                  "detail": "Grab two big holds low on the board, feet on, pull the hips to the wall and off again. Priming, not holding."
+                }
+              ]
+            },
+            {
+              "title": "Main work",
+              "items": [
+                {
+                  "name": "Position holds",
+                  "weeks": [
+                    1,
+                    2
+                  ],
+                  "detail": "On V0s: pull on at a pair of holds, bring the hips to the wall, find stillness, hold, step down. Work through each climb's positions bottom to top. 1 to 2 minutes on the mat between efforts.",
+                  "byWeek": {
+                    "1": "5–7 s per position · 2 passes through 2 or 3 different V0s.",
+                    "2": "7–10 s per position · 2 passes through 3 V0s, including Doom Scroll's starting positions."
+                  }
+                },
+                {
+                  "name": "Hand hovers",
+                  "weeks": [
+                    2
+                  ],
+                  "sets": "1 pass per climb",
+                  "detail": "In a held position, float one hand off its hold for a beat, then put it back without the hips sagging. The bridge between holding and moving."
+                },
+                {
+                  "name": "Move links",
+                  "weeks": [
+                    3
+                  ],
+                  "detail": "Link 2 to 3 moves at a time on V0s, then step down and rest. Cover each climb in overlapping chunks. Hips stay close; feet placed quietly, never stabbed.",
+                  "byWeek": {
+                    "3": "2 rounds through 2 or 3 V0s in chunks · then rehearse Doom Scroll's hardest single move 3 to 5 times in isolation."
+                  }
+                },
+                {
+                  "name": "Attempts",
+                  "weeks": [
+                    4
+                  ],
+                  "detail": "Climb the friendliest V0s in overlapping halves or in full. Then Doom Scroll in sections: bottom half, top half, and if both go, a full try or two. Finish by feeling out the easier moves of one V1. Stop on the best effort of the day.",
+                  "byWeek": {
+                    "4": "Up to 6 to 8 total quality attempts, with real rest between."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Optional finisher",
+              "items": [
+                {
+                  "name": "Dead hang on the board's jugs",
+                  "sets": "2 × 10–15 s",
+                  "detail": "Shoulders down, open hand. Skip if fingers feel worked."
+                }
+              ]
+            }
+          ]
+        },
+        "lifta": {
+          "title": "Lift A",
+          "subtitle": "Hinge + pull · back and glutes",
+          "kind": "lift",
+          "duration": "~30 min",
+          "blocks": [
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Barbell Romanian deadlift",
+                  "detail": "Bar slides down the thighs to the deepest flat-back range, then hips drive forward. Load creeps up only while the back stays quiet.",
+                  "byWeek": {
+                    "1": "3×6 at the Block 1 finishing load.",
+                    "2": "3×8 same load.",
+                    "3": "3×8, add 5–10 lb if week 2 was crisp.",
+                    "4": "3×8 at week 3 load."
+                  }
+                },
+                {
+                  "name": "Dead hang",
+                  "detail": "Rack bar or rings, shoulders down away from the ears, feet assisting as needed. Board days will thank you.",
+                  "byWeek": {
+                    "1": "3 × 30 s",
+                    "2": "3 × 30 s",
+                    "3": "3 × 35 s",
+                    "4": "3 × 40 s, or less assist."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Single-arm kettlebell row",
+                  "detail": "Free hand braced, flat back, pull the bell to the hip.",
+                  "byWeek": {
+                    "1": "3×8 per arm at Block 1 weight.",
+                    "2": "3×10 per arm.",
+                    "3": "3×8 per arm, heavier bell.",
+                    "4": "3×10 per arm at week 3 weight."
+                  }
+                },
+                {
+                  "name": "Single-leg glute bridge",
+                  "detail": "Hips level, drive through the heel.",
+                  "byWeek": {
+                    "1": "3×8 per side",
+                    "2": "3×10 per side",
+                    "3": "3×10 per side, pause at the top.",
+                    "4": "3×10 per side, paused."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds",
+              "items": [
+                {
+                  "name": "Ring row",
+                  "video": "https://www.youtube.com/watch?v=-4ewEbYEr4w",
+                  "detail": "Body in one line, pull the rings to the ribs.",
+                  "byWeek": {
+                    "1": "3×8–10 at the Block 1 angle.",
+                    "2": "3×8–10.",
+                    "3": "3×8–10, feet a step further forward.",
+                    "4": "3×8–10 at the week 3 angle."
+                  }
+                },
+                {
+                  "name": "Dead bug",
+                  "detail": "Low back gently pressed to the floor the entire time. Slow.",
+                  "byWeek": {
+                    "1": "3×10 per side",
+                    "2": "3×10 per side",
+                    "3": "3×12 per side",
+                    "4": "3×12 per side"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "liftb": {
+          "title": "Lift B",
+          "subtitle": "Squat + press · legs, shoulders, upper back",
+          "kind": "lift",
+          "duration": "~30 min",
+          "blocks": [
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Goblet squat",
+                  "detail": "Bell at the chest, elbows inside the knees at the bottom, chest tall.",
+                  "byWeek": {
+                    "1": "3×8 at Block 1 finishing bell.",
+                    "2": "3×10.",
+                    "3": "3×8, heavier bell.",
+                    "4": "3×10 at week 3 bell."
+                  }
+                },
+                {
+                  "name": "Bench dips",
+                  "detail": "Shoulders down and back, elbows to about 90 degrees, hips brushing the bench. Shoulder pinch means incline push-ups instead.",
+                  "byWeek": {
+                    "1": "3×8–10",
+                    "2": "3×8–10",
+                    "3": "3×10–12, legs straighter.",
+                    "4": "3×10–12."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell reverse lunge",
+                  "detail": "Step back with control, drive up through the front heel.",
+                  "byWeek": {
+                    "1": "3×8 per leg at Block 1 bell.",
+                    "2": "3×8 per leg.",
+                    "3": "3×8 per leg, heavier bell.",
+                    "4": "3×8 per leg at week 3 bell."
+                  }
+                },
+                {
+                  "name": "Band face pull",
+                  "detail": "Band at eye level, elbows high and wide. The desk-job antidote, now also the board-shoulder insurance.",
+                  "byWeek": {
+                    "1": "3×15",
+                    "2": "3×15",
+                    "3": "3×15, thicker band or more stretch.",
+                    "4": "3×15."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds",
+              "items": [
+                {
+                  "name": "Suitcase carry",
+                  "detail": "One bell, switch sides each trip, about 20 yards; resist the sideways lean.",
+                  "byWeek": {
+                    "1": "3 trips per side",
+                    "2": "3 trips per side",
+                    "3": "3 trips per side, heavier bell.",
+                    "4": "3 trips per side at week 3 bell."
+                  }
+                },
+                {
+                  "name": "Bird dog",
+                  "detail": "Opposite arm and leg, hips level, reach long rather than high.",
+                  "byWeek": {
+                    "1": "3×8 per side",
+                    "2": "3×8 per side",
+                    "3": "3×10 per side",
+                    "4": "3×10 per side"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "liftc": {
+          "title": "Lift C",
+          "subtitle": "Hinge volume + push + core",
+          "kind": "lift",
+          "duration": "~30 min",
+          "blocks": [
+            {
+              "title": "Superset 1 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell deadlift",
+                  "detail": "Heavier bell than Block 1 when it moves well; every rep crisp.",
+                  "byWeek": {
+                    "1": "3×8",
+                    "2": "3×10",
+                    "3": "3×8, heavier.",
+                    "4": "3×10 at week 3 bell."
+                  }
+                },
+                {
+                  "name": "Incline push-up",
+                  "detail": "Hands on the rack safety bar, body in one rigid line; lower the bar setting over time.",
+                  "byWeek": {
+                    "1": "3×8–10",
+                    "2": "3×8–10",
+                    "3": "3×8–10, hands a notch lower.",
+                    "4": "3×8–10 at week 3 height."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 2 · 3 rounds",
+              "items": [
+                {
+                  "name": "Kettlebell swing",
+                  "detail": "Hips snap, arms relax, bell floats to chest height. If the hinge ever gets sloppy, band good mornings instead.",
+                  "byWeek": {
+                    "1": "3×10",
+                    "2": "3×12",
+                    "3": "3×12",
+                    "4": "3×15"
+                  }
+                },
+                {
+                  "name": "Half-kneeling kettlebell press",
+                  "detail": "Glute of the down leg squeezed, press without leaning back. Back in the rotation from Block 1's first half.",
+                  "byWeek": {
+                    "1": "3×8 per arm",
+                    "2": "3×8 per arm",
+                    "3": "3×8 per arm, heavier bell.",
+                    "4": "3×8 per arm at week 3 bell."
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Superset 3 · 3 rounds · core",
+              "items": [
+                {
+                  "name": "Hollow hold",
+                  "detail": "Low back pressed to the floor, legs as low as the low back allows. The exact shape the board asks for: this is hips-to-the-wall tension, horizontal.",
+                  "byWeek": {
+                    "1": "3 × 20 s",
+                    "2": "3 × 20–25 s",
+                    "3": "3 × 25 s",
+                    "4": "3 × 25–30 s"
+                  }
+                },
+                {
+                  "name": "Side plank",
+                  "detail": "Elbow under the shoulder, hips tall in one line.",
+                  "byWeek": {
+                    "1": "3 × 25–30 s per side",
+                    "2": "3 × 30 s per side",
+                    "3": "3 × 30 s per side, top leg lifted if easy.",
+                    "4": "3 × 30–35 s per side."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "title": "Cool-down",
+          "subtitle": "Lift days · tissue warm",
+          "kind": "mobility",
+          "duration": "5 min",
+          "blocks": [
+            {
+              "title": "Pair 1 · 2 rounds",
+              "items": [
+                {
+                  "name": "Standing forward fold",
+                  "sets": "30 s",
+                  "detail": "Soft knees, hang heavy, breathe."
+                },
+                {
+                  "name": "Hip flexor stretch",
+                  "sets": "30 s per side",
+                  "detail": "Half-kneeling, glute squeezed, gentle shift forward."
+                }
+              ]
+            },
+            {
+              "title": "Pair 2 · 1 round",
+              "items": [
+                {
+                  "name": "Child's pose",
+                  "sets": "45 s",
+                  "detail": "Knees wide, arms long, let the back breathe."
+                },
+                {
+                  "name": "Forearm stretch",
+                  "sets": "30 s each way",
+                  "detail": "Palm up then palm down, gentle pull on the fingers. New this block, for new climbing forearms."
+                }
+              ]
+            }
+          ]
+        },
+        "roll": {
+          "title": "Stretch + foam roll (optional)",
+          "subtitle": "After any session, or on rest days",
+          "kind": "mobility",
+          "duration": "10–12 min",
+          "blocks": [
+            {
+              "title": "Foam roll · ~45 s per area",
+              "items": [
+                {
+                  "name": "Quads and hip flexors",
+                  "detail": "Slow passes, pause on tender spots, keep breathing."
+                },
+                {
+                  "name": "Glutes and hamstrings",
+                  "detail": "Sit on the roller, tip to each side; then the back of the thighs."
+                },
+                {
+                  "name": "Upper back and lats",
+                  "detail": "Roller across the shoulder blades, then along the side under the armpit — the lats will feel board days first. Stay off the low back and neck."
+                },
+                {
+                  "name": "Forearms",
+                  "detail": "Roll them on a kettlebell handle or with the opposite thumb. Climber maintenance, starting now."
+                }
+              ]
+            },
+            {
+              "title": "Stretch pair · 2 rounds",
+              "items": [
+                {
+                  "name": "Hamstring strap stretch",
+                  "sets": "45 s per side",
+                  "detail": "Lying on the back, band over the foot, leg toward the ceiling, knee soft."
+                },
+                {
+                  "name": "Figure-4 stretch",
+                  "sets": "45 s per side",
+                  "detail": "Ankle over the opposite knee, pull the legs in gently."
+                }
+              ]
+            }
+          ]
+        },
+        "off": {
+          "title": "Easy movement (optional)",
+          "subtitle": "Rest day",
+          "kind": "mobility",
+          "duration": "20–30 min",
+          "blocks": [
+            {
+              "title": "",
+              "items": [
+                {
+                  "name": "Walk",
+                  "detail": "20 to 30 minutes at a genuinely easy pace."
+                },
+                {
+                  "name": "Gentle stretch",
+                  "detail": "A few minutes for whatever feels tight. Nothing forced."
+                }
+              ]
+            }
           ]
         }
       }
