@@ -34,7 +34,8 @@
     "2026-10-19|0|lifta|2:1": true,
     "2026-10-19|0|cooldown|0:0": true,
     "2026-10-19|0|cooldown|0:1": true,
-    "2026-10-19|0|cooldown|1:0": true
+    "2026-10-19|0|cooldown|1:0": true,
+    "2026-10-26|0|warmup|0:0": true
   },
   "notes": {}
 }
